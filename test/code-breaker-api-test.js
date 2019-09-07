@@ -59,7 +59,7 @@ describe('GET /setsecret:number', function() {
 
 describe('GET /guess/:number', function(){
   it('should return code 200', function(done){
-    request.get('/guess/1234')
+    request.get('/guess/')
       .expect(200)
       .end(function(err, res){
         if (err) return done (err)
